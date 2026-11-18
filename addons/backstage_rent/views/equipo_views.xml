@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_backstage_equipo" model="ir.actions.act_window">
+        <field name="name">Equipos</field>
+        <field name="res_model">backstage.equipo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_backstage_root" name="BackStage Rent"/>
+    <menuitem id="menu_backstage_equipos" name="Equipos"
+              parent="menu_backstage_root"
+              action="action_backstage_equipo"/>
+</odoo>
